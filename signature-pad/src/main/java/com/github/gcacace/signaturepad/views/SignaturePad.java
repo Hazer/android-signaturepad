@@ -10,7 +10,6 @@ import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.util.AttributeSet;
-import android.util.DisplayMetrics;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -60,10 +59,10 @@ public class SignaturePad extends View {
 
         //Configurable parameters
         try {
-            mMinWidth = a.getDimensionPixelSize(R.styleable.SignaturePad_minWidth, convertDpToPx(3));
-            mMaxWidth = a.getDimensionPixelSize(R.styleable.SignaturePad_maxWidth, convertDpToPx(7));
-            mVelocityFilterWeight = a.getFloat(R.styleable.SignaturePad_velocityFilterWeight, 0.9f);
-            mPaint.setColor(a.getColor(R.styleable.SignaturePad_penColor, Color.BLACK));
+            mMinWidth = a.getDimensionPixelSize(R.styleable.SignaturePad_sp_minWidth, convertDpToPx(3));
+            mMaxWidth = a.getDimensionPixelSize(R.styleable.SignaturePad_sp_maxWidth, convertDpToPx(7));
+            mVelocityFilterWeight = a.getFloat(R.styleable.SignaturePad_sp_velocityFilterWeight, 0.9f);
+            mPaint.setColor(a.getColor(R.styleable.SignaturePad_sp_penColor, Color.BLACK));
         } finally {
             a.recycle();
         }

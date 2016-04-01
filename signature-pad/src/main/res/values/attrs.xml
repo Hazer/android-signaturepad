@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="SignaturePad">
-        <attr name="minWidth" format="dimension" />
-        <attr name="maxWidth" format="dimension" />
-        <attr name="penColor" format="color" />
-        <attr name="velocityFilterWeight" format="float" />
+        <attr name="sp_minWidth" format="dimension" />
+        <attr name="sp_maxWidth" format="dimension" />
+        <attr name="sp_penColor" format="color" />
+        <attr name="sp_velocityFilterWeight" format="float" />
     </declare-styleable>
 </resources>
